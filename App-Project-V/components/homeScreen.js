@@ -71,40 +71,40 @@ export const HomeScreen = () =>{
 
              <View style={styles.tranWrap}>
                     <View style={styles.tranIcon}>
-                        <Image source={require('../assets/images/apple.png')} style={styles.icons} />
+                        <Image source={require('../assets/images/spotify.png')} style={styles.icons} />
                     </View>
                     <View style={styles.tranText}> 
-                            <Text style={styles.mainText}>Apple Store</Text> 
-                            <Text style={styles.subText}>Entertainment</Text>
+                            <Text style={styles.mainText}>Spotify</Text> 
+                            <Text style={styles.subText}>Music</Text>
                      </View> 
                      <View style={styles.selary}>
-                        <Text style={styles.amount}> -$5,99</Text>
+                        <Text style={styles.spotifyAmount}> -$12,99</Text>
                        </View>   
              </View>
 
              <View style={styles.tranWrap}>
                     <View style={styles.tranIcon}>
-                        <Image source={require('../assets/images/apple.png')} style={styles.icons} />
+                        <Image source={require('../assets/images/moneyTransfer.png')} style={styles.icons} />
                     </View>
                     <View style={styles.tranText}> 
-                            <Text style={styles.mainText}>Apple Store</Text> 
-                            <Text style={styles.subText}>Entertainment</Text>
+                            <Text style={styles.mainText}>Money Transaction</Text> 
+                            <Text style={styles.subText}>Transaction</Text>
                      </View> 
                      <View style={styles.selary}>
-                        <Text style={styles.amount}> -$5,99</Text>
+                        <Text style={styles.transAmount}>$300</Text>
                        </View>   
              </View>
 
              <View style={styles.tranWrap}>
                     <View style={styles.tranIcon}>
-                        <Image source={require('../assets/images/apple.png')} style={styles.icons} />
+                        <Image source={require('../assets/images/grocery.png')} style={styles.icons} />
                     </View>
                     <View style={styles.tranText}> 
-                            <Text style={styles.mainText}>Apple Store</Text> 
-                            <Text style={styles.subText}>Entertainment</Text>
+                            <Text style={styles.mainText}>Grocery</Text> 
+                            <Text style={styles.subText}>Shopping</Text>
                      </View> 
                      <View style={styles.selary}>
-                        <Text style={styles.amount}> -$5,99</Text>
+                        <Text style={styles.grosAmount}> -$88</Text>
                        </View>   
              </View>
 
@@ -192,6 +192,11 @@ const styles =StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.1)',
     
   },
+  icons:{
+    width:18,
+    height:20
+
+  },
   iconText: {
     marginTop: 10,
     textAlign: 'center',
@@ -257,6 +262,20 @@ amount:{
         fontWeight:'bold'
 
 },
+spotifyAmount:{
+  left:47,
+  fontSize:18,
+},
+transAmount:{
+  right:20,
+  fontSize:18,
+  color:'blue'
+
+},
+grosAmount:{
+  left:63,
+  fontSize:18,
+}
      
 
 })
